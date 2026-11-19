@@ -50,7 +50,6 @@ The notebook downloads TESS data from [MAST](https://mast.stsci.edu), NASA's arc
 ## For instructors
 
 - **Before the session:** run the whole notebook once on Colab and check the timing. If it runs long, the easiest sections to trim are Exercise 4, the Lomb-Scargle demo and the optional extensions.
-- **The Part 3 take-home star:** the real star in this workshop (TIC 287196418) is flagged as a false positive by LEO-Vetter. The odd and even transits have different depths, which suggests an eclipsing binary seen at half its true period. The instructor answer key in the notebook has the details.
 - **Making backup data for a different star:** run `python make_backup_npz.py TIC:SECTOR -o data` on Colab or any machine that can reach MAST, for example `python make_backup_npz.py 287196418:14 -o data`. It needs `lightkurve` installed. Commit the resulting `.npz` file to the `data/` folder.
 
 ## References and credits
